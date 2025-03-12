@@ -14,6 +14,7 @@ public class Client {
 	public static void main(String[] args) {
 		Configuration cfg=new Configuration();
 		cfg.configure();//it reads the hibernate.cfg,xml file
+		System.out.println("welcome ");
 		cfg.addAnnotatedClass(Mobile.class);
 		SessionFactory factory=cfg.buildSessionFactory();
 		Session session=factory.openSession();
